@@ -1,0 +1,883 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ .galleryContainer, .aboutContainer, .adhyatmikContainer, .upcoming-events{
+  background-repeat: no-repeat!important;
+  background-size: cover!important;  
+}
+.downloadContainer h2 , .adhyatmikContainer h2{
+  color: #F6F6F6;
+  font-family: 'Mukta', 'sans-serif';
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 62px;
+ }
+/* ---------------------------------------------------------------
+Header css section 
+--------------------------------------------------------------- */
+#navbarNav{
+  font-family: 'Inter', sans-serif;
+font-weight: 600;
+font-style: normal;
+font-size: 20px;
+justify-content:space-around;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+}
+.navbar-bg{
+  background-color:rgba(136, 136, 136, 0.5);
+}
+ .active{
+  color: #ED7D2D!important;
+}
+.navbar-brand{
+  margin-right: 0;
+}
+.navbar-brand img{
+  width:6rem;
+}
+.nav-item{
+  padding:0px 20px;
+}
+.navbar{
+  width: 100%;
+  z-index: 2;
+}
+.navbar-nav{
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .desktop-logo {
+    display: none;
+  }
+}
+
+@media (max-width:768px) {
+ .nav-item{
+  padding: 0;
+ }
+ .navbar-brand{
+   top: 10px;
+   left: 10px;
+ }
+ .desktop-logo {
+  display: block;
+}
+.mobile-logo{
+  display: none;
+}
+.navbar-brand img{
+  width: 3rem
+}
+.transparent-bg{
+  background-color:rgba(0, 0, 0, 0.58) ;
+  height: 100%;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: 4rem 1rem;
+}
+ }
+ @media (max-width:430px) {
+  #navbarNav{
+    font-size: 1rem;
+  }
+}
+/* ---------------------------------------------------------------
+Home css section 
+--------------------------------------------------------------- */
+.homeContainer{
+  background: url(./Assests/img/home.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:right;
+  padding-top: 100px;
+}
+.homeContent{
+  width: 65%;
+  text-align: center;
+  padding-top: 20%;
+  padding-bottom:10%;
+  font-family: 'Mukta', sans-serif;
+  font-style:normal;
+  font-weight:700;
+  line-height: 62px;
+font-size: 44px;
+}
+.mobile-text{
+  display: none;
+}
+@media (max-width:769px) {
+  .homeContent{
+    font-size: 2rem;
+    line-height: normal;
+    padding-left: 1rem;
+  }
+}
+@media (max-width:430px) {
+  .homeContent{
+    font-size: 2rem;
+    line-height: normal;
+    width: 100%;
+    padding-left: 0;
+  }
+  .dekstop-text{
+    display: none;
+  }
+  .mobile-text{
+    display: block;
+    font-size: medium;
+  }
+}
+
+/* ---------------------------------------------------------------
+about css section 
+--------------------------------------------------------------- */
+.aboutContainer{
+  background:url(./Assests/img/aboutbackground.png) center center / cover;
+  justify-content: space-around;
+  padding: 60px 0px 100px 0px;
+}
+.about-content{
+  background-color:rgba(0, 0, 0, 0.58) ;
+  height:100%;
+}
+.about-img{
+  text-align: center;
+}
+.about-img img{
+  width:400px;
+}
+.about-img p{
+  margin: 0px auto;
+  color: #000;
+  text-align: center;
+  font-family: 'Inter', 'sans-serif';
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 38px;
+  width: 400px;
+  max-width: 100%;
+}
+.about-content{
+  background-color:  rgba(233, 211, 135, 0.63);
+  border-radius: 20px;
+  padding: 20px 50px;
+  line-height: normal;
+  font-weight: 500;
+  text-align: justify;
+  font-family: 'Mukta', sans-serif;
+  font-style: normal;
+  font-size: 24px;
+}
+
+@media (max-width:769px) {
+  .aboutContainer{
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-img{
+    max-width: 100%;
+  }
+  .about-img p{
+    width: 362px;
+    font-size: 20px;
+  }
+  .about-content{
+    margin: 10px;
+    max-width: 100%;
+  }
+}
+@media (max-width:1104px) {
+  .about-img p{
+    width: 362px;
+    font-size: 20px;
+  }
+}
+@media (max-width:475px) {
+  .about-content{
+   padding: 20px;
+   line-height: normal;
+  }
+  .about-content{
+    font-size: medium;
+  }
+}
+@media (max-width:376px) {
+ .about-img img{
+  width: 300px;
+ }
+ .about-img p{
+width: 100%;
+ }
+}
+
+/* ---------------------------------------------------------------
+download css section 
+--------------------------------------------------------------- */
+.downloadContainer{
+  background:url(./Assests/img/old-paper.png) center center / cover;
+  height:100%;
+}
+  .download-content .head img{
+    height: 55px;
+    margin-right: 4px;
+  }
+  .download-content .view{
+    padding:20px 50px 
+  }
+.download-content .view a{
+  color: #FFF;
+  text-align: center;
+  font-family: 'Mukta';
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 62px;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+}
+ .download-content .card img{
+  padding: 1.4rem;
+}
+ .download-content .col-3{
+  padding:20px;
+}
+ .download-content .card-title{
+  text-transform: uppercase;
+  font-family: 'Rubik', 'sans-serif';
+  color:#486BC7;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+  font-size: 18px;
+  margin: 0;
+}
+.download-content .card{
+  border-radius: 15px;
+}
+ .download-content .card-body{
+  padding-top: 0;
+}
+.download-content .card-body p{
+  width: 60%;
+  text-align: justify;
+  font-family: 'Rubik', 'sans-serif';
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.download-content .card .btn{
+  border-radius: 20px;
+  background:  #FDD134;
+  color: white;
+  font-weight: 800;
+  letter-spacing: 1px ;
+  text-transform: uppercase;
+  margin: 0px auto;
+  margin-bottom: 1rem;
+  padding: 8px 26px;
+}
+@media (max-width:475px) {
+  .download-content .head {
+    align-items: center;
+  }
+  .download-content .head img{
+    height: 30px;
+    margin-right: 4px;
+  }
+  .download-content .head h2{
+    font-size: 30px;
+    line-height: normal;
+  }
+}
+@media (max-width:325px) {
+  .download-content .head h2{
+    font-size: 24px;
+  }
+  .download-content .view a{
+    font-size: 25px;
+  }
+}
+/* ---------------------------------------------------------------
+adyatmik css section 
+--------------------------------------------------------------- */
+.adhyatmikContainer{
+  background:url(./Assests/img/adhatmik-background.png) center center / cover;
+  height:100%;
+  padding-bottom: 100px;
+}
+.ytube-div{
+  border-radius: 10px;
+background: rgba(217, 217, 217, 0.52);
+box-shadow: 0px 4px 20px 4px rgba(0, 0, 0, 0.08);
+padding: 0;
+font-family: 'Open-sans', 'sans-serif';
+}
+.ytube-div iframe{
+  border-radius: 10px 10px 0px 0px;
+}
+.ytube-div .card-title{
+  color:#F6F6F6;
+  font-style: italic;
+  font-weight: 800;
+  line-height: normal;
+}
+.ytube-div .card-text{
+  color: #C4C4C4;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.swiper-pagination-bullet{
+  background-color: white;
+}
+/* ---------------------------------------------------------------
+Gallery css section 
+--------------------------------------------------------------- */
+.galleryContainer{
+  background:url(./Assests/img/Rectangle-25.png) center center no-repeat;
+  height:100%;
+}
+.gallery-content{
+  text-align: center;
+  background-color:lightgray 50% ;
+}
+.swiper img{
+  padding-bottom: 7%;
+max-width: 100%;
+}
+.swiper-button-next{
+  right:190px;
+  color: white;
+  font-weight: 800;
+}
+.swiper-button-prev {
+  left: 185px;
+  color: white;
+  font-weight: 800;
+}
+@media (max-width:768px) {
+  .swiper-button-next{
+    right:0;
+  }
+  .swiper-button-prev {
+    left: 0;
+  }
+  .gallery-content .py-4 img{
+    width: 230px;
+  }
+}
+/* ---------------------------------------------------------------
+upcoming events css section 
+--------------------------------------------------------------- */
+.upcoming-events{
+  background-position: left;
+  height: 100%;
+  padding-bottom: 110px;
+  background-color: black;
+  background: linear-gradient(0deg, rgba(246, 246, 246, 0.31) 0%, rgba(246, 246, 246, 0.31) 100%), url(./Assests/img/upcoming.png), lightgray 50% / cover no-repeat;
+}
+.upcoming-events .container{
+  width: 80%;
+  margin-right: 0;
+}
+.upcoming-events .container .row{
+  justify-content: space-evenly;
+}
+.upcoming-events img{
+  padding: 0;
+}
+.date{
+  line-height: 62px;
+}
+.upcoming-events .container .card{
+  border-radius: 25px;
+  background-color: #D6E3E9;;
+  font-family: 'Open-sans', 'sans-serif';
+  text-align: justify;
+  font-family:'Mukta', 'sans-serif';
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal
+}
+.upcoming-events .card-body p{
+  width: 100%;
+}
+@media (max-width:426px) {
+  .upcoming-events .container{
+    width: 100%;
+    margin:0px auto;
+  }
+}
+@media (max-width:768px) {
+  .upcoming-events .gallery-content img{
+    width: 90%;
+  }
+  .upcoming-events .gallery-content .card img{
+    width: 100%;
+  }
+}
+
+/* ---------------------------------------------------------------
+popup css section 
+--------------------------------------------------------------- */
+.popup {
+  position:fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+  width: 100%;
+  margin: auto;
+  padding: 100px 200px;
+}
+
+.popupContainer{
+  background: url(./Assests/img/popup-background.png) center center  / cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:80px;
+  z-index: 999;
+}
+.side-img{
+  border-radius: 29px;
+  align-items: center;
+}
+ .popupContainer .input{
+  border: none;
+}
+.popupContainer .input:focus{
+  outline: none;
+}
+ .popupContainer .form-head{
+  color: rgba(124, 31, 31, 0.90);
+  font-family: 'Roboto', sans-serif;
+font-size: 25px;
+font-style: normal;
+font-weight: 600;
+line-height: 31px;
+text-transform: lowercase;
+}
+.popup .close-btn{
+  right: 18%;
+  top: 12%;
+  background-color: transparent;
+  border: none;
+}
+.popup .close-btn svg{
+  font-size: 3rem;
+}
+
+ .popupContainer .form-control{
+  border-radius: 20px;
+  border: 2px solid #8B6718;
+  background: rgba(253, 238, 182, 0.63);
+  padding:23px 20px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  font-family:' Roboto', 'sans-serif'; 
+}
+ .popupContainer .submit-btn{
+  width: 100%;
+  border-radius: 20px;
+border: 2px solid #FFF;
+background: #FF6B00;
+padding:10px;
+color: #FFF;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 31px; 
+}
+.popupContainer input::placeholder{
+  color: #000;
+  font-family:' Roboto', 'sans-serif';
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 31px;
+}
+
+@media (max-width:769px) {
+  .popup{
+    padding: 10px;
+   position: absolute;
+  }
+  .popupContainer{
+    max-width: 100%;
+  padding: 0PX;
+  }
+  .side-img img{
+    margin-top: 100px;
+  }
+}
+@media (max-width:430px) {
+  .popup{
+    padding: 10px;
+   position: absolute;
+
+  }
+  .popupContainer{
+    flex-direction: column;
+    max-width: 100%;
+  padding: 0PX;
+  }
+
+}
+/* -----------------------------------------------------------------
+Footer css section 
+----------------------------------------------------------------- */
+.footer {
+  background: url(./Assests/img/footer.png) center center / cover  ;
+  color: white;
+  width: 100%;
+  position: absolute;
+}
+.footerimg{
+  position: relative;
+}
+.footer-content{
+background-color:rgba(0, 0, 0, 0.58) ;
+height: 100%;
+justify-content: space-around;
+align-items: center;
+padding-bottom: 30px;
+}
+.address{
+  text-transform: uppercase;
+  font-family: 'Mukta', 'sans-serif';
+ 
+}
+.address h5{
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+}
+.address p{
+  font-size: 20px;
+  font-style:normal ;
+  font-weight: 300;
+  line-height: 26px;
+}
+.contact{
+font-family: 'Mukta', 'san-serif';
+font-size: 20px;
+font-style: normal;
+font-weight: 300;
+line-height: 15px; 
+text-transform: uppercase;
+margin-top: 40px;
+}
+hr {
+position:absolute;
+  stroke-width: 1px;
+  background-color: #C4C4C4; 
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 2px;
+}
+.footer-content .pt-3{
+  text-align: center;
+}
+@media (max-width:768px) {
+  .footer-content{
+    max-height: 100%;
+  }
+  .footer-content{
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+
+  .address{
+    max-width: 100%;
+  }
+  .address h5{
+    font-size: 20px;
+  }
+  .address p{
+    font-size: 15px; 
+  }
+  .contact{
+    font-size: 15px;
+    margin-top: 20px;
+  }
+
+  .footer-content img{
+    width: 90px;
+  }
+}
+@media (max-width:426px) {
+  .address{
+    max-width: 100%;
+  }
+  .footer-content{
+    flex-direction: column;
+    align-items: left;
+    height: 100%;
+  }
+  .footerLogo{
+    max-width: 100%;
+  }
+.contact{
+  margin-top: 20px;
+}
+}
+
+/* -----------------------------------------------------------------
+Sidebar css section 
+----------------------------------------------------------------- */
+.ebookContainer{
+  background-image: url(./Assests/img/Background.png);
+  padding: 30px;
+}
+.ebookContent{
+  padding-top: 110px;
+}
+.sidebar {
+  background-color: #FB9043;
+  height: 100vh;
+  border-radius: 5px;
+  border: 1px solid #393939;
+  padding: 10px;
+}
+.checkbox {
+  margin: 10px;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+.border-bottom {
+  width: 50%;
+  border-bottom: 1px solid #FFFFFF;
+}
+.sidebar h3 {
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-weight: 600;
+}
+.sidebar label{
+  color: white;
+}
+.common-image-class {
+  width: 25px;
+  height: 25px;
+}
+.inputBox {
+  height: 46px;
+  border-radius: 5px;
+  background-color: #292929;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 20px;
+}
+.inputBox input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: transparent;
+  color: white;
+}
+
+.inputBox img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.CardsSection {
+  background: rgba(237, 125, 45, 0.20);
+  border-radius: 30px;
+}
+.LoadMoreBtn{
+  background-color: rgba(124, 31, 31, 0.5);
+  border: none;
+  color: white;
+  border-radius: 20px;
+}
+
+@media (max-width:768px) {
+  .ebookContainer{
+    flex-direction: column;
+    padding: 0px;
+  }
+
+}
+@media (max-width: 375px) {
+  .sidebar h3,
+  .sidebar label {
+    padding: 1px 5px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .common-image-class {
+    width: 17px;
+    height: 17px;
+  }
+}  
+
+ @media only screen and (min-width: 992px) and (max-width:1208px){
+  .Cards button {
+    padding: 6px 15px !important;
+    font-size: 10px;
+  }
+  .sidebar h3,
+  .sidebar label {
+    font-size: 16px;
+    
+  }
+}
+
+
+
+
+/* -----------------------------------------------------------------
+pdfviewer css section 
+----------------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Inter:wght@200&family=Oswald:wght@200;500;600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200&family=Roboto:ital,wght@0,100;0,300;1,300;1,400&family=Rubik:ital,wght@0,300;1,300&family=Ruda&display=swap');
+
+.backround {
+  width: 100%;
+  background-image: url(./Assests/img/Background.png);
+  background-size: cover;
+  background-position: center;
+  padding: 60px 100px;
+  display: flex;
+  justify-content: end;
+}
+
+.main {
+  width: 98%;
+  margin-top: 100px;
+}
+
+.imgContainer {
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  border: 10px solid #FFFFFF;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: 50px;
+}
+
+.titleContainer h3 {
+  color: #486BC7;
+  font-family: Rubik;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+
+}
+
+.titleContainer p {
+  color: #2E3F53;
+  font-family: Rubik;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140.5%;
+  width: 190px;
+}
+
+.Btn button {
+  background-color: rgba(124, 31, 31, 0.90);
+  border: none;
+  border-radius: 20px;
+  padding: 7px 30px;
+}
+
+.Btn button:hover {
+  background-color: white;
+  color: rgba(124, 31, 31, 0.90);
+}
+
+.pdfContainer {
+  margin-left: 60px;
+  height: 556px;
+}
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* media queries */
+@media only screen and (max-width:990px){
+  .Btn button {
+    font-size: 12px;
+    padding: 5px 20px; 
+  }
+  .titleContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+  gap: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 20px;
+  }
+  .customRow{
+    display: flex;
+    flex-direction: column;
+  }
+  .backround {
+    padding: 20px;
+  }
+  .imgContainer {
+    margin: 0 auto; 
+  }
+  .titleContainer h3 {
+    font-size: 20px;
+  }
+  .titleContainer p {
+    font-size: 16px;
+    width: 100%;
+  }
+  .pdfContainer {
+    margin: 0;
+    height: 100vh;
+  }
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (min-device-width: 991px) and (max-device-width: 1281px) {
+    .titleContainer{
+      margin-left: 95px;
+    }
+    .titleContainer h3{
+      width: 136px;
+    }
+    .pdfContainer{
+        margin-left: 123px;
+    }
+}
+@media screen and (min-device-width: 580px) and (max-device-width:991px) {
+  .pdfContainer{
+    height:120vh ;
+  }
+}
